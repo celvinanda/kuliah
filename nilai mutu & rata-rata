@@ -1,0 +1,61 @@
+#include<iostream>
+#include <conio.h>
+
+using namespace std;
+int input = 0;
+int jumlah = 0;
+int banyakData = 3;
+double rata;
+
+void hitungAverage(int jumlah, int banyakData) {
+    cout << "Jumlah Angka     = " << jumlah << endl;
+    cout << "Banyak Data      = " << banyakData << endl;
+    rata = jumlah / banyakData;
+    cout << "Rata-ratanya     = " << rata<< endl;
+}
+void nilaiHuruf(float rata)
+{
+    //Untuk nilai 0-50
+    if ((rata >= 0) && (rata <= 50)) {
+        cout << "Nilai Siswa      = E" << endl;
+    }
+
+    //Untuk nilai 51-60
+    else if ((rata >= 50.01) && (rata <= 65)) {
+        cout << "Nilai Siswa      = D" << endl;
+    }
+
+    //Untuk nilai 61-70
+    else if ((rata >= 65, 01) && (rata <= 70)) {
+        cout << "Nilai Siswa      = C" << endl;
+    }
+
+    //Untuk nilai 71-80
+    else if ((rata >= 70, 01) && (rata <= 85)) {
+        cout << "Nilai Siswa      = B" << endl;
+    }
+
+    //Untuk nilai 81-100
+    else if ((rata >= 85, 01) && (rata <= 100)) {
+        cout << "Nilai Siswa      = A" << endl;
+    }
+
+    //Inputan salah
+    else {
+        cout << "Nilai harus 0-100\n";
+    }
+
+}
+
+int main() {
+    cout << "Masukan data \n";
+    for (int i = 1; i <= banyakData; i++) {
+        cin >> input;
+        jumlah = jumlah + input;
+    }
+
+    hitungAverage(jumlah, banyakData);
+    nilaiHuruf(rata);
+
+    return 0;
+}
