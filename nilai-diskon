@@ -1,0 +1,21 @@
+#include<iostream>
+
+using namespace std;
+int diskon, hargaBarang;
+double total;
+
+int main() {
+    cout << "Input :" << endl;
+    cout << "Harga Barang (Rp) : "; cin >> hargaBarang;
+    cout << "Diskon Barang (%) : "; cin >> diskon;
+
+    //Rumus
+    diskon = hargaBarang * diskon / 100;
+    //total = hargaBarang - diskon;
+
+    cout << "Output :" << endl;
+    cout << "Jumlah Diskon = " << diskon << endl;
+    //cout << "Total Bayar = " << total << endl;
+   
+    return 0;
+}
